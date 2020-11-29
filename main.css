@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(0, 139, 139);
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+    
+    font-size: 20px;
+}    
+
+a {
+    color:rgba(214, 214, 48, 0.7);
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgba(23, 153, 240, 0.7);
+    text-decoration: underline;
+    font-weight: 900;
+}
