@@ -20,7 +20,7 @@
             </ul>
         </div> 
         <div>
-            <h1>Bart Broersen</h1>
+            <h1 onclick="H1click('hallo','wereld')">Bart Broersen</h1>
             <p1>Jupiter</p1>
             <p2>Apollo</p2> 
     
@@ -32,7 +32,16 @@
             </nav> 
         </div>
         <script type="text/JavaScript">
-            alert{"hallo wereld"};
+        
+        function H1click(params, params2) {
+            const header = document.querySelector("h1");
+            if (header.innerHTML == params + params2) {
+                header.innerHTML = "Bart Broersen";     
+            } else {
+                header.innerHTML = params + params2;
+            }
+            
+        }
         </script>  
     </body>
 </html>
