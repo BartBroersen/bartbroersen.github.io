@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="main.css">
     </head>
         <body>
-            <button type="button">hier klikken voor snoepje</button>
+            <button type="button" onclick="dikkebillen()">hier klikken voor snoepje</button>
             <div id=”nav”>
                 <ul> 
                     <li><a href="index.html">Home</a></li>
@@ -19,7 +19,7 @@
             </div> 
             <div>
                 <h1>Patricia</h1>
-                <img src="dikkebillen.jpg" alt="dikkebillen">
+                <img width="200" src="dikkebillen.jpg" alt="dikkebillen">
                 <p1>Morauw</p1>
                 <p2>Morauw</p2> 
         
@@ -29,7 +29,20 @@
                     <a href="/js/">JavaScript</a> |
                     <a href="/python/">Python</a>
                 </nav> 
-            </div>    
+            </div>
+            <script type="text/JavaScript">
+        
+                function dikkebillen() {
+                    const image = document.querySelector("img");
+                    if (image.getAttribute("src") == "dikkebillen.jpg") {   
+                        image.setAttribute("src", "dikkebillen2.jpg");     
+                    } else {
+                        image.setAttribute("src", "dikkebillen.jpg");         
+                    }
+                    
+                }
+                </script>  
+            
         </body>
-    
+        
 </html>                           
